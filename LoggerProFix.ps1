@@ -1,0 +1,1 @@
+Invoke-WebRequest https://github.com/jteske54/fixes/raw/master/mfc140u/mfc140u.dll -OutFile "C:\Windows\SysWOW64\mfc140u.dll"
