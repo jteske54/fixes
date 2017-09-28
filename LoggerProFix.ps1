@@ -1,1 +1,2 @@
-Invoke-WebRequest https://github.com/jteske54/fixes/raw/master/mfc140u/mfc140u.dll -OutFile "C:\Windows\SysWOW64\mfc140u.dll"
+if (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator")) { Start-Process powershell.exe "-NoProfile -ExecutionPolicy Bypass -File `"$PSCommandPath`"" -Verb RunAs; exit }
+Invoke-WebRequest https://github.com/jteske54/fixes/raw/master/mfc140u/mfc140u.dll -OutFile 'C:\Windows\SysWOW64\mfc140u.dll'
